@@ -69,9 +69,15 @@ block content
             h4  Welcome
           div.panel-body
             | Thank you for collaborating with the experiment. You can
-            a#L(href="/login")  Login
+            if (!user)
+              a#L(href="/login")  Login
+            if (user)
+              label#L Login
             | or
-            a#R(href="/register") Register
+            if (!user)
+              a#L(href="/register") Register
+            if (user)
+              label#L Register
             |  to see the progress of your contribution through your score and level.
             | You can also compare your contribution with other users.
             | In the Top button you can see the 5 users with the highest score.
