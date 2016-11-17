@@ -19,7 +19,7 @@ router.config = App.new(__dirname + "/app.json");
 var sequence = 0;
 var temp = new Date();
 var date_str = temp.getFullYear() + "-" + (1 + temp.getMonth()) + "-"+ temp.getDate();
-var log_dir = process.env.OPENSHIFT_DATA_DIR || "../log";
+var log_dir = process.env.OPENSHIFT_DATA_DIR || "./log";
 
 // create logger to console and file
 var logger = new (winston.Logger)({
