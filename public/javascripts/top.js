@@ -1,6 +1,6 @@
 /*** Created by lucero on 17/10/2016.*/
 var nivel = function ( dato ) {
-    var a=100; var b=10000;
+    var a=100; var b=10100;
     if(dato<=a){
         return lvl=0;
     }
