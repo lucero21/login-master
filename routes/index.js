@@ -202,7 +202,7 @@ router.put('/worker/:uuid/:popsize', function(req, res){
 // Exports for tests
 
 var nivel = function ( dato ) {
-  var a=100; var b=10100;
+  var a=100; var b=10000;
   if(dato<=a){
     return lvl=0;
   }
