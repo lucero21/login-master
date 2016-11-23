@@ -32,7 +32,7 @@ var refresh_top = function(){
                 $("#dc").append(individual);
             }*/
             for (var us=0;us<ind.length;us++){
-                if (us < 5) {
+                if (us <10){
                     var individual = $('<li class="tabla"></li>').html("<PRE class='top'>"+"<h2 class='top'>"+" User:    " +ind[us].usuario+"   Score:    " + "<span class='score'>"+ ind[us].score+ "</span>"+"   Level:  "+"<span class='score'>"+nivel(ind[us].score)+"</span>"+"</h2>"+"</PRE>");
 
                    // console.log(individual);
