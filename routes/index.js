@@ -53,7 +53,7 @@ var user = "anonimo";
 
 
 router.get('/', function(req, res) {
-  res.render('index2', { user: req.user});
+  res.render('index', { user: req.user});
 });
 router.get('/register', function(req, res) {
   res.render('register', { });
